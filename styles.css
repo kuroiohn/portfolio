@@ -1,0 +1,759 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('fruits.png');
+    background-size: cover;
+    height: 400px;
+    background-repeat: no-repeat;
+    font-family: helvetica;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.star {
+    position: absolute;
+    background-image: url('star.png');
+    background-size: cover;
+    animation-name: AnimateStar;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes AnimateStar {
+    0% {
+        transform: translateY(0) rotate(0) translateX(10);
+    }
+    100% {
+        transform: translateY(-1000px) rotate(60deg);
+    }
+}
+
+
+#star1 {
+    left: 3%;
+    top: 77%;
+    height: 90px;
+    width: 90px;
+    animation-duration: 3s;
+}
+
+#star2 {
+    left: 7%;
+    top: 100%;
+    height: 200px;
+    width: 200px;
+    animation-duration: 5s;
+}
+
+#star3 {
+    left: 20%;
+    top: 35%;
+    height: 140px;
+    width: 140px;
+    animation-duration: 4s;
+}
+
+#star4 {
+    left: 38%;
+    top: 20%;
+    height: 80px;
+    width: 80px;
+    animation-duration: 10s;
+}
+
+#star5 {
+    left: 45%;
+    top: 35%;
+    height: 110px;
+    width: 110px;
+    animation-duration: 4s;
+}
+
+#star6 {
+    left: 58%;
+    top: 35%;
+    height: 190px;
+    width: 190px;
+    animation-duration: 7s;
+}
+
+#star7 {
+    left: 70%;
+    top: 35%;
+    height: 70px;
+    width: 70px;
+    animation-duration: 8s;
+}
+
+#star8 {
+    left: 81%;
+    top: 25%;
+    height: 120px;
+    width: 120px;
+    animation-duration: 5s;
+}
+
+#star9 {
+    left: 88%;
+    top: 25%;
+    height: 160px;
+    width: 160px;
+    animation-duration: 4s;
+}
+
+.content-container {
+    height: 33px;
+    width: cover;
+    background-color: red;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.marquee {
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    height: 200px;
+    font-weight: bold;
+    overflow-x: hidden;
+  }
+  
+  .track {
+    margin-top: 4px;
+    font-size: 20px;
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 20s linear infinite;
+  }
+  
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+.pid {
+    background-size: cover;
+    width: 100%;
+    height: 725px;
+}
+
+.portid {
+    position: relative;
+}
+
+.idpic {
+    position: absolute;
+    left: 0;
+    top: 0; 
+    z-index: 1;
+    height: 520px;
+    width: 409px;
+    margin-left: 200px;
+    margin-top: 100px;
+}
+.right-content {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1; 
+    text-align: center; 
+}
+
+.hyunjae {
+    width: 300px;
+    height: auto;
+    margin-right: 350px;
+    margin-top: 140px;
+}
+
+.text-container {
+    position: absolute;
+    text-align: left;
+    left: -100px;
+    top: 320px;
+    padding-top: 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+.text-section1,
+.text-section2,
+.text-section3,
+.text-section4 {
+    width: 100%;
+}
+
+.text-section p {
+    margin: 100;
+}
+
+.red-bg {
+    background: red;
+    background-size: cover;
+    margin-top: -110px;
+    margin-left: 135px;
+}
+
+.button-container-1 {
+    position: relative;
+    width: 170px;
+    height: 40px;
+    border: solid #454545 2px;
+    margin-right: 10px;
+    display: inline-block;
+    margin-bottom: 0px;
+    overflow: hidden;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    transition: 0.3s;
+    letter-spacing: 1px;
+    border-radius: 10px;
+  }
+  .button-container-1 button {
+    width: 100%;
+    height: 100%;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 11px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    background: #a9bfde;
+    -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+    mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+    -webkit-mask-size: 2300% 100%;
+    mask-size: 2500% 100%;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    -webkit-animation: ani2 0.7s steps(22) forwards;
+    animation: ani2 0.3s steps(22) forwards;
+  }
+  .button-container-1 button:hover {
+    -webkit-animation: ani 0.7s steps(22) forwards;
+    animation: ani 0.5s steps(22) forwards;
+  }
+  
+  .button-container-2 {
+      position: relative;
+      width: 170px;
+      height: 40px;
+      margin-right: 10px;
+      border: solid #454545 2px;
+      display: inline-block;
+      overflow: hidden;
+      font-family: "Lato", sans-serif;
+      font-weight: 300;
+      font-size: 20px;
+      transition: 0.3s;
+      letter-spacing: 1px;
+      border-radius: 10px;
+  }
+  .button-container-2 button {
+      width: 100%;
+      height: 100%;
+      font-family: "Lato", sans-serif;
+      font-weight: 300;
+      font-size: 11px;
+      letter-spacing: 1px;
+      font-weight: bold;
+      background: #6c9adc;
+      -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+      mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+      -webkit-mask-size: 2300% 100%;
+      mask-size: 2500% 100%;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      -webkit-animation: ani2 0.7s steps(22) forwards;
+      animation: ani2 0.3s steps(22) forwards;
+  }
+  .button-container-2 button:hover {
+      -webkit-animation: ani 0.7s steps(22) forwards;
+      animation: ani 0.7s steps(22) forwards;
+  }
+  
+  .button-container-3 {
+      position: relative;
+      width: 170px;
+      height: 40px;
+      margin-right: 10px;
+      border: solid #454545 2px;
+      display: inline-block;
+      overflow: hidden;
+      font-family: "Lato", sans-serif;
+      font-weight: 300;
+      font-size: 20px;
+      transition: 0.3s;
+      letter-spacing: 1px;
+      border-radius: 10px;
+  }
+  .button-container-3 button {
+      width: 100%;
+      height: 100%;
+      font-family: "Lato", sans-serif;
+      font-weight: 300;
+      font-size: 11px;
+      letter-spacing: 1px;
+      font-weight: bold;
+      background: #236bd9;
+      -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+      mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+      -webkit-mask-size: 2300% 100%;
+      mask-size: 2500% 100%;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      -webkit-animation: ani2 0.7s steps(22) forwards;
+      animation: ani2 0.3s steps(22) forwards;
+  }
+  .button-container-3 button:hover {
+      -webkit-animation: ani 0.7s steps(22) forwards;
+      animation: ani 0.7s steps(22) forwards;
+  }
+  
+  .mas {
+    position: absolute;
+    color: #000;
+    text-align: center;
+    width: 100%;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 11px;
+    margin-top: 14px;
+    overflow: hidden;
+    font-weight: bold;
+  }
+  
+  @-webkit-keyframes ani {
+    from {
+      -webkit-mask-position: 0 0;
+      mask-position: 0 0;
+    }
+    to {
+      -webkit-mask-position: 100% 0;
+      mask-position: 100% 0;
+    }
+  }
+  @keyframes ani {
+    from {
+      -webkit-mask-position: 0 0;
+      mask-position: 0 0;
+    }
+    to {
+      -webkit-mask-position: 100% 0;
+      mask-position: 100% 0;
+    }
+  }
+  @-webkit-keyframes ani2 {
+    from {
+      -webkit-mask-position: 100% 0;
+      mask-position: 100% 0;
+    }
+    to {
+      -webkit-mask-position: 0 0;
+      mask-position: 0 0;
+    }
+  }
+  @keyframes ani2 {
+    from {
+      -webkit-mask-position: 100% 0;
+      mask-position: 100% 0;
+    }
+    to {
+      -webkit-mask-position: 0 0;
+      mask-position: 0 0;
+    }
+  }
+  
+.mes {
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    margin-top: 55px;
+  }
+
+  .meshart {
+    position: relative;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 28.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color: yellow;
+    margin-bottom: 500px;
+    display: flex;
+}
+
+.text-overlay h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.text-overlay p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.intro1 {
+  width: 400px;
+  margin-right: 60px;
+  margin-left: 50px;
+}
+
+.intro2 {
+  width: 400px;
+  margin-right: 20px;
+}
+
+.intro3 {
+  width: 400px;
+  margin-left: 20px;
+  margin-right: 0px;
+}
+
+.projects {
+  position: relative;
+}
+
+
+.proj-1 {
+  width: 500px;
+  height: 560px;
+  position: absolute;
+  margin-left: 200px;
+  margin-top: 300px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border: solid black 2px;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-name: showProj1;
+}
+
+.proj-2 {
+  width: 500px;
+  height: 560px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 300px;
+  margin-left: 750px;
+  z-index: 1;
+  border: solid black 2px;
+}
+
+.proj-3 {
+  width: 1037px;
+  height: 395px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 388px;
+  margin-left: 205px;
+  z-index: 1;
+  border: solid black 2px;
+}
+
+.proj-4 {
+  width: 1037px;
+  height: 542px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 310px;
+  margin-left: 205px;
+  z-index: 1;
+  border: solid black 2px;
+}
+
+.proj-5 {
+  width: 500px;
+  height: 590px;
+  position: absolute;
+  margin-left: 200px;
+  margin-top: 300px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border: solid black 2px;
+}
+
+.proj-6 {
+  width: 500px;
+  height: 590px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 300px;
+  margin-left: 750px;
+  z-index: 1;
+  border: solid black 2px;
+}
+
+.proj-8 {
+  width: 650px;
+  height: 650px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 300px;
+  margin-left: 405px;
+  z-index: 1;
+  border: solid black 2px;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-name: showProj8;
+}
+
+@keyframes showProj8 {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.proj-bg {
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  margin-top: -5px;
+  z-index: 0;
+}
+
+.line, .carousel li img, .carousel li, .carousel {
+  width: 100%;
+}
+
+.flex, .carousel-wrapper, .center, .carousel ul {
+  display: flex;
+}
+
+.center, .carousel ul {
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-wrapper {
+  position: absolute;
+  max-width: 600px;
+  top: 13%;
+  left: 30%;
+  z-index: 1;
+}
+.carousel-wrapper input {
+  display: none;
+}
+
+.carousel {
+  overflow: hidden;
+  border-radius: 15px;
+}
+.carousel ul {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 900%;
+  transition: left 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+}
+.carousel li img {
+  border-radius: 15px;
+}
+
+.nav-dot {
+  position: absolute;
+  cursor: pointer;
+  margin-left: -7.5px;
+  bottom: -22.5px;
+  width: 15px;
+  height: 15px;
+  opacity: 0.5;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+.nav-dot:hover {
+  opacity: 0.8;
+  transform: scale(1.2);
+}
+.nav-dot:active {
+  transform: scale(0.9);
+}
+
+.nav-dot[for=slide1] {
+  left: 30%;
+}
+
+#slide1:checked ~ .carousel ul {
+  left: 0%;
+}
+#slide1:checked ~ .nav-dot[for=slide1] {
+  opacity: 1;
+}
+
+.nav-dot[for=slide2] {
+  left: 35%;
+}
+
+#slide2:checked ~ .carousel ul {
+  left: -100%;
+}
+#slide2:checked ~ .nav-dot[for=slide2] {
+  opacity: 1;
+}
+
+.nav-dot[for=slide3] {
+  left: 40%;
+}
+
+#slide3:checked ~ .carousel ul {
+  left: -200%;
+}
+#slide3:checked ~ .nav-dot[for=slide3] {
+  opacity: 1;
+}
+
+.nav-dot[for=slide4] {
+  left: 45%;
+}
+
+#slide4:checked ~ .carousel ul {
+  left: -300%;
+}
+#slide4:checked ~ .nav-dot[for=slide4] {
+  opacity: 1;
+}
+
+.nav-dot[for=slide5] {
+  left: 50%;
+}
+
+#slide5:checked ~ .carousel ul {
+  left: -400%;
+}
+#slide5:checked ~ .nav-dot[for=slide5] {
+  opacity: 1;
+}
+
+.nav-dot[for=slide6] {
+  left: 55%;
+}
+
+#slide6:checked ~ .carousel ul {
+  left: -500%;
+}
+#slide6:checked ~ .nav-dot[for=slide6] {
+  opacity: 1;
+}
+
+.nav-dot[for=slide7] {
+  left: 60%;
+}
+
+#slide7:checked ~ .carousel ul {
+  left: -600%;
+}
+#slide7:checked ~ .nav-dot[for=slide7] {
+  opacity: 1;
+}
+
+.nav-dot[for=slide8] {
+  left: 65%;
+}
+
+#slide8:checked ~ .carousel ul {
+  left: -700%;
+}
+#slide8:checked ~ .nav-dot[for=slide8] {
+  opacity: 1;
+}
+
+.nav-dot[for=slide9] {
+  left: 70%;
+}
+
+#slide9:checked ~ .carousel ul {
+  left: -800%;
+}
+#slide9:checked ~ .nav-dot[for=slide9] {
+  opacity: 1;
+}
+
+.right-arrow, .left-arrow {
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  font-weight: 500;
+  text-shadow: none;
+  top: 50%;
+  z-index: 1;
+  opacity: 0.7;
+  margin-top: -25px;
+  height: 50px;
+  font-size: 50px;
+  transition: 0.2s;
+  color: white;
+}
+.right-arrow:hover, .left-arrow:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+.right-arrow:active, .left-arrow:active {
+  transform: scale(0.9);
+}
+
+.left-arrow {
+  left: 15px;
+}
+
+.right-arrow {
+  right: 15px;
+}
+
+#slide1:checked ~ .left-arrow[for=slide9], #slide1:checked ~ .right-arrow[for=slide2] {
+  display: block;
+}
+
+#slide2:checked ~ .left-arrow[for=slide1], #slide2:checked ~ .right-arrow[for=slide3] {
+  display: block;
+}
+
+#slide3:checked ~ .left-arrow[for=slide2], #slide3:checked ~ .right-arrow[for=slide4] {
+  display: block;
+}
+
+#slide4:checked ~ .left-arrow[for=slide3], #slide4:checked ~ .right-arrow[for=slide5] {
+  display: block;
+}
+
+#slide5:checked ~ .left-arrow[for=slide4], #slide5:checked ~ .right-arrow[for=slide6] {
+  display: block;
+}
+
+#slide6:checked ~ .left-arrow[for=slide5], #slide6:checked ~ .right-arrow[for=slide7] {
+  display: block;
+}
+
+#slide7:checked ~ .left-arrow[for=slide6], #slide7:checked ~ .right-arrow[for=slide8] {
+  display: block;
+}
+
+#slide8:checked ~ .left-arrow[for=slide7], #slide8:checked ~ .right-arrow[for=slide9] {
+  display: block;
+}
+
+#slide9:checked ~ .left-arrow[for=slide8], #slide9:checked ~ .right-arrow[for=slide1] {
+  display: block;
+}
